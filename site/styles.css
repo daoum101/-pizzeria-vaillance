@@ -331,6 +331,11 @@ body.on-hero .header {
   margin-top: -86px; /* pull behind sticky header so image starts at very top */
   display: block;
 }
+.hero-poster-wrap {
+  position: relative;
+  width: 100%;
+  line-height: 0;
+}
 .hero-poster-link {
   display: block;
   width: 100%;
@@ -342,6 +347,20 @@ body.on-hero .header {
   height: auto;
   display: block;
   object-fit: cover;
+}
+.hero-poster .hot {
+  position: absolute;
+  display: block;
+  border-radius: 8px;
+  z-index: 5;
+  transition: background 0.25s ease, box-shadow 0.25s ease;
+  background: transparent;
+}
+.hero-poster .hot:hover,
+.hero-poster .hot:focus-visible {
+  background: rgba(255, 255, 255, 0.10);
+  box-shadow: 0 0 0 2px rgba(240, 198, 109, 0.7);
+  outline: none;
 }
 .hero-poster .scroll-cue {
   bottom: 18px; right: 28px;
