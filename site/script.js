@@ -65,6 +65,27 @@ document.addEventListener("DOMContentLoaded", () => {
   if (navToggle) navToggle.addEventListener("click", () => toggleDrawer());
   drawerLinks.forEach((l) => l.addEventListener("click", () => toggleDrawer(false)));
 
+  /* ---------- COOKIE CONSENT (RGPD) ---------- */
+  const cookieBanner = document.getElementById("cookieBanner");
+  const cookieAccept = document.getElementById("cookieAccept");
+  const cookieRefuse = document.getElementById("cookieRefuse");
+  const COOKIE_KEY = "vaillance_cookie_consent";
+  if (cookieBanner) {
+    if (!localStorage.getItem(COOKIE_KEY)) {
+      setTimeout(() => { cookieBanner.hidden = false; }, 1200);
+    }
+    const close = (val) => {
+      localStorage.setItem(COOKIE_KEY, val);
+      cookieBanner.hidden = true;
+      if (val === "accepted") {
+        // Hook for GA4 / Meta Pixel here
+        console.log("[Cookies] Accepted — analytics can load");
+      }
+    };
+    cookieAccept && cookieAccept.addEventListener("click", () => close("accepted"));
+    cookieRefuse && cookieRefuse.addEventListener("click", () => close("refused"));
+  }
+
   /* ---------- MENU FILTERS ---------- */
   const filters = document.querySelectorAll(".filter");
   const dishes = document.querySelectorAll(".dish");
