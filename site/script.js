@@ -86,6 +86,34 @@ document.addEventListener("DOMContentLoaded", () => {
     cookieRefuse && cookieRefuse.addEventListener("click", () => close("refused"));
   }
 
+  /* ---------- RESERVATION MODAL ---------- */
+  const rsvOverlay = document.getElementById("rsvOverlay");
+  const rsvClose = document.getElementById("rsvClose");
+  const rsvForm = document.getElementById("rsvForm");
+  const rsvSuccess = document.getElementById("rsvSuccess");
+  const openReserve = (e) => { if (e) e.preventDefault(); if (rsvOverlay) { rsvOverlay.hidden = false; document.body.style.overflow = "hidden"; } };
+  const closeReserve = () => { if (rsvOverlay) { rsvOverlay.hidden = true; document.body.style.overflow = ""; if (rsvForm) rsvForm.hidden = false; if (rsvSuccess) rsvSuccess.hidden = true; rsvForm && rsvForm.reset(); } };
+  // Triggers: header reserve button, contact reserve button, all event card "Réserver" buttons, painted-image reserve hotspot
+  const reserveTriggers = document.querySelectorAll('[data-testid="header-reserve-btn"], #openReserveBtn, [data-testid="event-pizzaparty-cta"], [data-testid="event-anniv-cta"], [data-testid="hot-reserve"]');
+  reserveTriggers.forEach(b => b.addEventListener("click", openReserve));
+  rsvClose && rsvClose.addEventListener("click", closeReserve);
+  rsvOverlay && rsvOverlay.addEventListener("click", (e) => { if (e.target === rsvOverlay) closeReserve(); });
+  document.addEventListener("keydown", (e) => { if (e.key === "Escape" && rsvOverlay && !rsvOverlay.hidden) closeReserve(); });
+  if (rsvForm) {
+    rsvForm.addEventListener("submit", (e) => {
+      e.preventDefault();
+      const data = Object.fromEntries(new FormData(rsvForm).entries());
+      const subject = `Réservation Pizzeria Vaillance — ${data.name} (${data.persons} pers.)`;
+      const body = `Bonjour,\n\nJe souhaite réserver une table à la Pizzeria Vaillance :\n\n• Nom : ${data.name}\n• Téléphone : ${data.phone}\n• Email : ${data.email || "—"}\n• Date : ${data.date}\n• Heure : ${data.time}\n• Personnes : ${data.persons}\n• Message : ${data.notes || "—"}\n\nMerci de confirmer.`;
+      const mailto = `mailto:info@pizzeriavaillance.be?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+      window.location.href = mailto;
+      rsvForm.hidden = true;
+      if (rsvSuccess) rsvSuccess.hidden = false;
+      // Auto close after 4s
+      setTimeout(closeReserve, 4500);
+    });
+  }
+
   /* ---------- MENU FILTERS ---------- */
   const filters = document.querySelectorAll(".filter");
   const dishes = document.querySelectorAll(".dish");

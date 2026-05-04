@@ -1420,3 +1420,37 @@ h1 em { color: inherit; }
 .btn-cookie-accept:hover { background: var(--gold-2); transform: translateY(-2px); }
 .btn-cookie-refuse { background: transparent; color: var(--cream); border-color: rgba(255,255,255,0.3); }
 .btn-cookie-refuse:hover { background: rgba(255,255,255,0.08); }
+
+/* ============================ RESERVATION MODAL */
+.rsv-overlay { position: fixed; inset: 0; background: rgba(10,6,3,0.78); backdrop-filter: blur(8px); z-index: 9500; display: flex; align-items: center; justify-content: center; padding: 20px; animation: fadeIn 0.3s var(--ease); }
+@keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } }
+.rsv-overlay[hidden] { display: none; }
+.rsv-modal { background: var(--cream); color: var(--ink); border-radius: 20px; padding: 40px clamp(24px, 4vw, 48px); max-width: 600px; width: 100%; max-height: 92vh; overflow-y: auto; position: relative; box-shadow: 0 40px 120px rgba(0,0,0,0.6); animation: rsvPop 0.4s var(--ease); border: 1px solid var(--line); }
+@keyframes rsvPop { from { transform: translateY(40px) scale(0.96); opacity: 0; } to { transform: none; opacity: 1; } }
+.rsv-close { position: absolute; top: 14px; right: 14px; width: 40px; height: 40px; border-radius: 50%; background: rgba(15,10,5,0.08); border: none; cursor: pointer; font-size: 16px; color: var(--ink); transition: all 0.25s var(--ease); }
+.rsv-close:hover { background: var(--terracotta); color: var(--cream); transform: rotate(90deg); }
+.rsv-modal h3 { font-family: "Fraunces", serif; font-size: clamp(28px, 4vw, 40px); margin: 4px 0 8px; }
+.rsv-modal .script-tag { color: var(--terracotta); font-family: "Caveat", cursive; font-size: 22px; }
+.rsv-sub { color: var(--ink-2); font-size: 15px; margin-bottom: 24px; }
+.rsv-form { display: flex; flex-direction: column; gap: 14px; }
+.rsv-form label { display: flex; flex-direction: column; gap: 6px; font-size: 12px; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; color: var(--ink-2); }
+.rsv-form input, .rsv-form select, .rsv-form textarea { padding: 12px 14px; border: 1.5px solid var(--line-strong); border-radius: 10px; background: #fff; font-family: inherit; font-size: 15px; color: var(--ink); font-weight: 400; text-transform: none; letter-spacing: 0; transition: border-color 0.25s var(--ease), box-shadow 0.25s var(--ease); }
+.rsv-form input:focus, .rsv-form select:focus, .rsv-form textarea:focus { outline: none; border-color: var(--gold); box-shadow: 0 0 0 3px rgba(217,164,65,0.18); }
+.rsv-row { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
+.rsv-row:has(select) { grid-template-columns: 1fr 1fr 1fr; }
+.rsv-submit { margin-top: 8px; width: 100%; }
+.rsv-info { font-size: 13px; color: var(--ink-2); text-align: center; margin-top: 6px; }
+.rsv-info a { color: var(--terracotta); font-weight: 700; }
+.rsv-success { text-align: center; padding: 30px 10px; }
+.rsv-success i { font-size: 64px; color: #16a34a; margin-bottom: 16px; animation: successPop 0.5s var(--ease); }
+@keyframes successPop { 0% { transform: scale(0); } 70% { transform: scale(1.15); } 100% { transform: scale(1); } }
+.rsv-success h4 { font-family: "Fraunces", serif; font-size: 28px; margin-bottom: 8px; }
+@media (max-width: 640px) { .rsv-row { grid-template-columns: 1fr !important; } .rsv-modal { padding: 30px 20px; } }
+
+/* Language switcher */
+.lang-switcher { position: fixed; top: 100px; right: 20px; display: flex; gap: 4px; background: rgba(15,10,5,0.82); backdrop-filter: blur(12px); padding: 6px; border-radius: 999px; border: 1px solid rgba(255,255,255,0.12); z-index: 80; }
+.lang-btn { background: transparent; color: var(--cream); border: none; padding: 6px 12px; font-size: 11px; font-weight: 800; letter-spacing: 0.12em; cursor: pointer; border-radius: 999px; transition: all 0.25s var(--ease); }
+.lang-btn.active { background: var(--gold); color: var(--espresso); }
+.lang-btn:not(.active):hover { background: rgba(255,255,255,0.08); }
+body.on-hero .lang-switcher { opacity: 0; pointer-events: none; transition: opacity 0.3s ease; }
+@media (max-width: 768px) { .lang-switcher { top: 80px; right: 12px; padding: 4px; } .lang-btn { padding: 5px 9px; font-size: 10px; } }
