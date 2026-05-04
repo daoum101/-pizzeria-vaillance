@@ -1353,3 +1353,44 @@ h1 em { color: inherit; }
     font-size: 36px;
   }
 }
+
+/* ============================ ÉVÉNEMENTS */
+.events {
+  background: linear-gradient(180deg, var(--cream) 0%, var(--cream-2) 100%);
+  padding: 120px clamp(20px, 5vw, 60px);
+  position: relative;
+  overflow: hidden;
+}
+.events::before {
+  content: ""; position: absolute; inset: 0;
+  background-image: radial-gradient(circle at 10% 20%, rgba(217,164,65,0.08), transparent 40%),
+                    radial-gradient(circle at 90% 80%, rgba(194,69,31,0.06), transparent 45%);
+  pointer-events: none;
+}
+.events-inner { max-width: 1280px; margin: 0 auto; position: relative; }
+.events-head { text-align: center; max-width: 720px; margin: 0 auto 64px; }
+.events-head h2 { font-family: "Fraunces", serif; font-size: clamp(36px, 5vw, 60px); line-height: 1.05; letter-spacing: -0.02em; margin: 8px 0 16px; color: var(--ink); }
+.events-head h2 em { color: var(--terracotta); font-style: italic; }
+.events-head p { color: var(--ink-2); font-size: 17px; line-height: 1.6; }
+.events-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 28px; }
+.event-card {
+  background: #fff; border-radius: 18px; padding: 36px 30px;
+  border: 1px solid var(--line); box-shadow: var(--shadow-sm);
+  display: flex; flex-direction: column; gap: 16px;
+  transition: transform 0.4s var(--ease), box-shadow 0.4s var(--ease);
+}
+.event-card:hover { transform: translateY(-6px); box-shadow: var(--shadow-md); }
+.event-icon {
+  width: 60px; height: 60px; border-radius: 50%;
+  background: linear-gradient(135deg, var(--gold-2), var(--gold));
+  color: var(--espresso); display: flex; align-items: center; justify-content: center;
+  font-size: 24px;
+}
+.event-card h3 { font-family: "Fraunces", serif; font-size: 28px; color: var(--ink); }
+.event-card > p { color: var(--ink-2); font-size: 15px; line-height: 1.6; }
+.event-card ul { list-style: none; padding: 0; margin: 0; display: flex; flex-direction: column; gap: 8px; }
+.event-card ul li { display: flex; align-items: center; gap: 10px; font-size: 14px; color: var(--ink-2); }
+.event-card ul li i { color: var(--terracotta); font-size: 12px; }
+.event-card .btn { margin-top: auto; align-self: flex-start; }
+@media (max-width: 1024px) { .events-grid { grid-template-columns: 1fr; gap: 20px; } }
+@media (max-width: 768px) { .events { padding: 80px 22px; } }
