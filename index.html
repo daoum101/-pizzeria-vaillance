@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="fr-BE">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+  <meta name="theme-color" content="#0f0a05"/>
+  <title>Pizzeria Vaillance Anderlecht | Pizza au feu de bois, pâtes & livraison</title>
+  <meta name="description" content="Pizzeria Vaillance — Pl. de la Vaillance 10, 1070 Anderlecht. Pizza au feu de bois, pâtes fraîches, tout fait maison. Livraison & sur place. Noté 4,7★ sur Google."/>
+  <meta name="keywords" content="pizzeria Anderlecht, pizza feu de bois Bruxelles, livraison pizza Anderlecht 1070, restaurant italien Anderlecht, Place de la Vaillance pizza, pizza maison Anderlecht"/>
+  <meta name="robots" content="index,follow,max-image-preview:large"/>
+  <link rel="canonical" href="https://daoum101.github.io/pizzeria-vaillance/"/>
+  <link rel="manifest" href="manifest.json"/>
+  <link rel="apple-touch-icon" href="icon-192.png"/>
+  <meta property="og:type" content="restaurant"/>
+  <meta property="og:title" content="Pizzeria Vaillance — Le vrai goût de l'Italie à Anderlecht"/>
+  <meta property="og:description" content="Pizza au feu de bois, pâtes fraîches et ambiance conviviale. Tout fait maison. Noté 4,7★ sur Google."/>
+  <meta property="og:image" content="https://daoum101.github.io/pizzeria-vaillance/food-margherita-2.jpg"/>
+  <meta property="og:url" content="https://daoum101.github.io/pizzeria-vaillance/"/>
+  <meta property="og:locale" content="fr_BE"/>
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,wght@0,300;0,500;0,700;0,900;1,300;1,500&family=DM+Sans:wght@300;400;500;700&family=Caveat:wght@700&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="styles.css"/>
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"Restaurant","name":"Pizzeria Vaillance","servesCuisine":["Italian","Pizza","Pasta"],"priceRange":"€€","aggregateRating":{"@type":"AggregateRating","ratingValue":"4.7","reviewCount":"42"},"address":{"@type":"PostalAddress","streetAddress":"Place de la Vaillance 10","postalCode":"1070","addressLocality":"Anderlecht","addressCountry":"BE"},"telephone":"+32230739774","openingHours":"Mo-Su 09:00-23:00","acceptsReservations":true}</script>
+</head>
+<body>
+
+<div class="cursor" id="cursor"></div>
+<div class="cursor-follower" id="cursor-follower"></div>
+<div class="progress" id="progress"></div>
+
+<header class="header" id="header">
+  <a class="logo" href="#accueil" aria-label="Accueil">
+    <span>Pizzeria</span><strong>Vaillance</strong><small>Anderlecht · 1070</small>
+  </a>
+  <button class="burger" id="burger" aria-label="Menu"><span></span><span></span><span></span></button>
+  <nav class="nav" id="nav">
+    <a href="#accueil">Accueil</a>
+    <a href="#menu">Menu</a>
+    <a href="#galerie">Galerie</a>
+    <a href="#avis">Avis</a>
+    <a href="#contact">Contact</a>
+  </nav>
+  <a class="reserve" href="tel:+32230739774">📞 Réserver</a>
+</header>
+
+<main>
+
+<!-- HERO -->
+<section id="accueil" class="hero">
+  <div id="particles"></div>
+  <picture>
+    <source srcset="hero-accueil.webp" type="image/webp">
+    <img src="hero-accueil.jpg" alt="Pizzeria Vaillance Anderlecht" fetchpriority="high"/>
+  </picture>
+  <div class="hero-overlay"></div>
+  <div class="hero-content">
+    <div class="hero-tag reveal-up">⭐ 4,7/5 · 42 avis Google · #2 pizzeria Anderlecht</div>
+    <p class="hero-script reveal-up" style="--d:.15s">Benvenuti !</p>
+    <h1 class="reveal-up" style="--d:.28s">Tout fait<br><em>maison</em></h1>
+    <p class="hero-sub reveal-up" style="--d:.4s">Pizza au feu de bois · Pâtes fraîches · Anderlecht</p>
+    <p class="hero-desc reveal-up" style="--d:.5s">Pas d'industriels, pas de congélation — pâte préparée à l'ancienne avec patience.</p>
+    <div class="hero-buttons reveal-up" style="--d:.62s">
+      <a href="https://www.takeaway.com/be-fr/menu/pizzeria-vaillance" target="_blank" rel="noreferrer">🏍️ Commander maintenant</a>
+      <a href="#menu">Voir le menu</a>
+      <a href="tel:+32230739774">02 30 73 97 74</a>
+    </div>
+  </div>
+  <div class="hero-quick">
+    <div class="hq-item"><strong>Ouvert 7j/7</strong><span>09h00 – 23h00</span></div>
+    <a class="hq-item" href="https://maps.google.com/?q=Place+de+la+Vaillance+10+1070+Anderlecht" target="_blank" rel="noreferrer">
+      <strong>Place de la Vaillance 10</strong><span>1070 Anderlecht · Parking</span>
+    </a>
+    <a class="hq-item" href="tel:+32230739774"><strong>02 30 73 97 74</strong><span>Réservation & commande</span></a>
+  </div>
+</section>
+
+<!-- TICKER -->
+<div class="ticker-wrap" aria-hidden="true">
+  <div class="ticker">
+    <span>🍕 Pizza au feu de bois</span><span>🍝 Pâtes fraîches maison</span><span>⭐ 4,7/5 · 42 avis Google</span><span>🧀 Zéro congélation</span><span>📍 Anderlecht 1070</span><span>🏍️ Livraison rapide</span><span>🍕 Pizza au feu de bois</span><span>🍝 Pâtes fraîches maison</span><span>⭐ 4,7/5 · 42 avis Google</span><span>🧀 Zéro congélation</span><span>📍 Anderlecht 1070</span><span>🏍️ Livraison rapide</span>
+  </div>
+</div>
+
+<!-- STATS -->
+<div class="stats-bar">
+  <div class="stat-item reveal-up"><strong>4,7★</strong><span>Note Google</span></div>
+  <div class="stat-item reveal-up" style="--d:.1s"><strong>42+</strong><span>Avis clients</span></div>
+  <div class="stat-item reveal-up" style="--d:.2s"><strong>7j/7</strong><span>Ouvert</span></div>
+  <div class="stat-item reveal-up" style="--d:.3s"><strong>0%</strong><span>Congélation</span></div>
+</div>
+
+<!-- MENU -->
+<section id="menu" class="section dark">
+  <div class="bg-word" data-parallax="0.22">MENU</div>
+  <p class="script reveal-up" style="position:relative;z-index:1">La carta</p>
+  <h2 class="reveal-up" style="--d:.1s;position:relative;z-index:1">Notre carte <em>authentique</em></h2>
+  <p class="section-text reveal-up" style="--d:.18s;position:relative;z-index:1">Tout préparé sur place, rien de congelé. Des recettes généreuses qui ont fait notre réputation.</p>
+  <div class="filters reveal-up" style="--d:.26s;position:relative;z-index:1">
+    <button class="filter active" data-filter="all">Tout voir</button>
+    <button class="filter" data-filter="pizza">🍕 Pizzas</button>
+    <button class="filter" data-filter="pasta">🍝 Pâtes</button>
+    <button class="filter" data-filter="entree">🥗 Entrées</button>
+    <button class="filter" data-filter="salade">🥙 Salades</button>
+  </div>
+
+  <div class="food-grid" style="position:relative;z-index:1">
+    <article class="food-card tilt-card reveal-left" data-cat="pizza">
+      <div class="food-img"><img src="food-margherita-2.jpg" alt="Pizza Margherita" loading="lazy"/></div>
+      <div class="food-info"><h3>Margherita</h3><p>Tomate, mozzarella fraîche, basilic, huile d'olive.</p><strong>9,50€</strong></div>
+    </article>
+    <article class="food-card tilt-card reveal-up" data-cat="pizza" style="--d:.08s">
+      <div class="food-img"><img src="food-parma.jpg" alt="Pizza Parma roquette" loading="lazy"/></div>
+      <div class="food-info"><h3>Parma & Roquette</h3><p>Tomate, mozzarella, salami, roquette fraîche, parmesan.</p><strong>15,50€</strong></div>
+    </article>
+    <article class="food-card tilt-card reveal-up" data-cat="pizza" style="--d:.16s">
+      <div class="food-img"><img src="food-capricciosa.jpg" alt="Pizza Capricciosa" loading="lazy"/></div>
+      <div class="food-info"><h3>Capricciosa</h3><p>Tomate, mozzarella, jambon, champignons, artichauts, olives, poivrons.</p><strong>13,50€</strong></div>
+    </article>
+    <article class="food-card tilt-card reveal-right" data-cat="pizza">
+      <div class="food-img"><img src="food-vegetariana.jpg" alt="Pizza Végétarienne" loading="lazy"/></div>
+      <div class="food-info"><h3>Végétarienne</h3><p>Courgettes, brocoli, artichauts, poivrons, olives, champignons.</p><strong>14,00€</strong></div>
+    </article>
+    <article class="food-card tilt-card reveal-left" data-cat="pizza">
+      <div class="food-img"><img src="food-margherita-1.jpg" alt="Margherita DOP" loading="lazy"/></div>
+      <div class="food-info"><h3>Margherita DOP</h3><p>Tomate San Marzano, mozzarella di bufala, tomates cerises, basilic.</p><strong>11,50€</strong></div>
+    </article>
+    <article class="food-card tilt-card reveal-up" data-cat="pizza" style="--d:.08s">
+      <div class="food-img"><img src="food-vegetariana2.jpg" alt="Pizza du Jardin" loading="lazy"/></div>
+      <div class="food-info"><h3>Pizza du Jardin</h3><p>Mozzarella, champignons frais, poivrons rouges et jaunes, courgettes.</p><strong>13,00€</strong></div>
+    </article>
+    <article class="food-card tilt-card reveal-up" data-cat="pizza" style="--d:.16s">
+      <div class="food-img"><img src="food-marinara.jpg" alt="Pizza Marinara" loading="lazy"/></div>
+      <div class="food-info"><h3>Marinara</h3><p>Tomate San Marzano, ail, origan, huile d'olive extra-vierge.</p><strong>9,00€</strong></div>
+    </article>
+    <article class="food-card tilt-card reveal-left" data-cat="entree">
+      <div class="food-img"><img src="food-bruschetta.jpg" alt="Plateau Bruschetta" loading="lazy"/></div>
+      <div class="food-info"><h3>Plateau Bruschetta</h3><p>Pain grillé, mozzarella, tomates cerises, olives, roquette, parmesan.</p><strong>12,00€</strong></div>
+    </article>
+    <article class="food-card tilt-card reveal-up" data-cat="entree" style="--d:.1s">
+      <div class="food-img"><img src="food-charcuterie.jpg" alt="Plateau Charcuterie" loading="lazy"/></div>
+      <div class="food-info"><h3>Plateau Charcuterie</h3><p>Bresaola, salami, jambon de Parme, feta, tomates cerises, olives.</p><strong>15,00€</strong></div>
+    </article>
+    <article class="food-card tilt-card reveal-up" data-cat="salade" style="--d:.1s">
+      <div class="food-img"><img src="food-salade-poulet.jpg" alt="Salade Poulet Grillé" loading="lazy"/></div>
+      <div class="food-info"><h3>Salade Poulet Grillé</h3><p>Laitue, poulet grillé, tomates, artichaut, olives, feta, balsamique.</p><strong>14,00€</strong></div>
+    </article>
+    <article class="food-card tilt-card reveal-right" data-cat="salade">
+      <div class="food-img"><img src="food-salade-poulet2.jpg" alt="Salade Italiana" loading="lazy"/></div>
+      <div class="food-info"><h3>Salade Italiana</h3><p>Poulet grillé, laitue, tomates, champignons, olives, vinaigrette maison.</p><strong>13,50€</strong></div>
+    </article>
+    <article class="food-card tilt-card no-img reveal-left" data-cat="pasta">
+      <div class="food-info-full"><div class="pasta-icon">🍝</div><h3>Pasta Arrabbiata</h3><p>Tomate, ail, piment et persil frais.</p><strong>10,00€</strong></div>
+    </article>
+    <article class="food-card tilt-card no-img reveal-up" data-cat="pasta" style="--d:.1s">
+      <div class="food-info-full"><div class="pasta-icon">🍝</div><h3>Pasta Carbonara</h3><p>Crème, lardons, parmesan, poivre noir.</p><strong>11,50€</strong></div>
+    </article>
+    <article class="food-card tilt-card no-img reveal-right" data-cat="pasta">
+      <div class="food-info-full"><div class="pasta-icon">🍝</div><h3>Frutti di Mare</h3><p>Fruits de mer, ail, tomate cerise et persil.</p><strong>15,00€</strong></div>
+    </article>
+  </div>
+
+  <a class="btn-primary floating reveal-up" style="--d:.2s;margin-top:44px;display:inline-flex;position:relative;z-index:1" href="https://www.takeaway.com/be-fr/menu/pizzeria-vaillance" target="_blank" rel="noreferrer">🏍️ Commander la livraison</a>
+</section>
+
+<!-- GALERIE -->
+<section id="galerie" class="section">
+  <div class="bg-word" data-parallax="0.18" style="-webkit-text-stroke-color:rgba(194,69,31,.05)">FOTOS</div>
+  <p class="script reveal-up" style="position:relative;z-index:1">Galerie</p>
+  <h2 class="reveal-up" style="--d:.1s;position:relative;z-index:1">Nos plats & <em>notre lieu</em></h2>
+  <p class="section-text reveal-up" style="--d:.18s;position:relative;z-index:1">Photos authentiques de nos pizzas, salades et de notre terrasse.</p>
+  <div class="gallery" style="position:relative;z-index:1">
+    <figure class="g-item big reveal-left" data-src="food-margherita-2.jpg"><img src="food-margherita-2.jpg" alt="Pizza Margherita" loading="lazy"></figure>
+    <figure class="g-item reveal-up" style="--d:.08s" data-src="food-parma.jpg"><img src="food-parma.jpg" alt="Pizza Parma" loading="lazy"></figure>
+    <figure class="g-item reveal-up" style="--d:.16s" data-src="food-capricciosa.jpg"><img src="food-capricciosa.jpg" alt="Capricciosa" loading="lazy"></figure>
+    <figure class="g-item reveal-right" data-src="food-bruschetta.jpg"><img src="food-bruschetta.jpg" alt="Bruschetta" loading="lazy"></figure>
+    <figure class="g-item reveal-up" style="--d:.08s" data-src="food-charcuterie.jpg"><img src="food-charcuterie.jpg" alt="Charcuterie" loading="lazy"></figure>
+    <figure class="g-item reveal-up" style="--d:.16s" data-src="food-salade-poulet.jpg"><img src="food-salade-poulet.jpg" alt="Salade poulet" loading="lazy"></figure>
+    <figure class="g-item reveal-left" data-src="terrasse-1.jpg"><img src="terrasse-1.jpg" alt="Terrasse" loading="lazy"></figure>
+    <figure class="g-item reveal-up" style="--d:.1s" data-src="terrasse-2.jpg"><img src="terrasse-2.jpg" alt="Terrasse" loading="lazy"></figure>
+    <figure class="g-item reveal-right" data-src="interieur-1.jpg"><img src="interieur-1.jpg" alt="Intérieur" loading="lazy"></figure>
+  </div>
+</section>
+
+<!-- VRAIS AVIS GOOGLE -->
+<section id="avis" class="section cream">
+  <div class="bg-word" data-parallax="0.15" style="-webkit-text-stroke-color:rgba(217,164,65,.05)">AVIS</div>
+  <p class="script reveal-up" style="position:relative;z-index:1">Ce qu'ils disent</p>
+  <h2 class="reveal-up" style="--d:.1s;position:relative;z-index:1">Vrais avis <em>Google</em></h2>
+  <p class="section-text reveal-up" style="--d:.18s;position:relative;z-index:1">4,7★ · 42 avis · #2 pizzeria à Anderlecht</p>
+  <div class="reviews" style="position:relative;z-index:1">
+    <article class="tilt-card reveal-left">
+      <div class="review-top"><span class="stars">★★★★★</span><span class="source">Google</span></div>
+      <p>"Un délice ! Vraies pizzas comme on n'en trouve plus ! Tout fait maison, pâte préparée à l'ancienne avec patience et délicatesse."</p>
+      <strong>— Cliente Google ✓</strong>
+    </article>
+    <article class="tilt-card reveal-up" style="--d:.1s">
+      <div class="review-top"><span class="stars">★★★★★</span><span class="source">Google</span></div>
+      <p>"La meilleure pizzeria du coin et l'équipe la plus sympathique. Terrasse superbe, les enfants peuvent jouer en sécurité."</p>
+      <strong>— Client Google ✓</strong>
+    </article>
+    <article class="tilt-card reveal-right">
+      <div class="review-top"><span class="stars">★★★★★</span><span class="source">Google</span></div>
+      <p>"L'accueil est parfait, les pizzas délicieuses, tout est super frais et les prix très bas. Une excellente adresse !"</p>
+      <strong>— Client Google ✓</strong>
+    </article>
+    <article class="tilt-card reveal-left">
+      <div class="review-top"><span class="stars">★★★★★</span><span class="source">Google</span></div>
+      <p>"Meilleure pizza rapport qualité/prix de Bruxelles. Pâte de qualité, cuite au feu de bois. Service rapide, staff sympathique."</p>
+      <strong>— Client Google ✓</strong>
+    </article>
+    <article class="tilt-card reveal-up" style="--d:.1s">
+      <div class="review-top"><span class="stars">★★★★★</span><span class="source">Google</span></div>
+      <p>"Les petites enseignes font les plus belles surprises ! Pizzas délicieuses, pâte fine, bien garnies. Excellent rapport qualité/prix !"</p>
+      <strong>— Client Google ✓</strong>
+    </article>
+    <article class="tilt-card reveal-right">
+      <div class="review-top"><span class="stars">★★★★★</span><span class="source">Google</span></div>
+      <p>"Sur place ou emporté c'est très bon, pizza italienne cuite au feu de bois. La patronne très gentille et souriante. Je recommande !"</p>
+      <strong>— Cliente Google ✓</strong>
+    </article>
+  </div>
+  <div style="margin-top:40px;position:relative;z-index:1">
+    <a class="btn-outline reveal-up" href="https://search.google.com/local/writereview?placeid=ChIJBayd-1TEw0cRj6U1d8_kUbc" target="_blank" rel="noreferrer">⭐ Laisser un avis Google</a>
+  </div>
+</section>
+
+<!-- PARKING -->
+<section class="parking reveal-up">
+  <div class="parking-card tilt-card">
+    <div class="parking-icon floating">🅿️</div>
+    <div>
+      <p class="script">Accès facile</p>
+      <h2>Parking à disposition</h2>
+      <p>Venez manger sur place ou récupérer votre commande — un parking est disponible à proximité. Terrasse en extérieur avec espace sécurisé pour les enfants.</p>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact" class="section contact">
+  <div class="bg-word" data-parallax="0.15" style="-webkit-text-stroke-color:rgba(217,164,65,.06)">CIAO</div>
+  <p class="script reveal-up" style="position:relative;z-index:1">Venez nous voir !</p>
+  <h2 class="reveal-up" style="--d:.1s;position:relative;z-index:1">Envie d'une <em>vraie pizza ?</em></h2>
+  <p class="reveal-up" style="--d:.18s;position:relative;z-index:1"><strong>📍 Place de la Vaillance 10 · 1070 Anderlecht</strong></p>
+  <p class="reveal-up" style="--d:.24s;position:relative;z-index:1"><strong>📞 02 30 73 97 74</strong> · Lun–Dim 09h–23h</p>
+  <div class="cta reveal-up" style="--d:.32s;position:relative;z-index:1">
+    <a href="tel:+32230739774">📞 Appeler</a>
+    <a href="https://www.takeaway.com/be-fr/menu/pizzeria-vaillance" target="_blank" rel="noreferrer">🏍️ Commander</a>
+    <a href="https://maps.google.com/?q=Place+de+la+Vaillance+10+1070+Anderlecht" target="_blank" rel="noreferrer">📍 Y aller</a>
+  </div>
+  <div class="map reveal-up" style="--d:.4s;position:relative;z-index:1">
+    <iframe src="https://www.google.com/maps?q=Place+de+la+Vaillance+10+1070+Anderlecht&output=embed" loading="lazy" title="Carte Pizzeria Vaillance"></iframe>
+  </div>
+</section>
+
+</main>
+
+<div class="lightbox" id="lightbox" role="dialog" aria-modal="true">
+  <button id="closeLb" aria-label="Fermer">×</button>
+  <img id="lbImg" alt=""/>
+</div>
+
+<div class="sticky-actions">
+  <a href="tel:+32230739774">📞 Appeler</a>
+  <a href="https://www.takeaway.com/be-fr/menu/pizzeria-vaillance" target="_blank" rel="noreferrer">🏍️ Livraison</a>
+</div>
+
+<footer>
+  <div class="footer-inner">
+    <div><strong>Pizzeria Vaillance</strong><br>Place de la Vaillance 10, 1070 Anderlecht<br><a href="tel:+32230739774">02 30 73 97 74</a></div>
+    <div><strong>Horaires</strong><br>Lundi – Dimanche · 09h00 – 23h00</div>
+    <div><strong>Commander</strong><br><a href="https://www.takeaway.com/be-fr/menu/pizzeria-vaillance" target="_blank" rel="noreferrer">Takeaway / Delivery</a><br><a href="tel:+32230739774">Par téléphone</a></div>
+  </div>
+  <p class="footer-copy">© <span id="year"></span> Pizzeria Vaillance Anderlecht — Tous droits réservés</p>
+</footer>
+
+<script src="i18n.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
