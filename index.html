@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Pizzeria La Vaillance — Anderlecht | Pizza artisanale & cuisine italienne</title>
+  <meta name="description" content="Pizzeria La Vaillance à Anderlecht. Pizzas artisanales, pâtes, boissons, vins et menu complet. Site premium Astra Agency." />
+  <meta name="theme-color" content="#080604" />
+  <link rel="manifest" href="manifest.json" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Allura&family=Inter:wght@400;500;600;700;800;900&family=Playfair+Display:wght@600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="loader" id="loader" aria-hidden="true">
+    <div class="loader-ring"><span></span><span></span><span></span></div>
+    <div class="loader-title">La Vaillance</div>
+    <div class="loader-sub">four chaud · pâte maison · Anderlecht</div>
+  </div>
+
+  <div class="noise"></div><div class="cursor-glow" id="cursorGlow"></div>
+  <header class="site-header" id="header">
+    <a class="brand" href="#top"><span class="brand-mark">LV</span><span><strong>La Vaillance</strong><small>depuis 2019</small></span></a>
+    <nav>
+      <a href="#experience">Expérience</a><a href="#menu">Menu</a><a href="#gallery">Galerie</a><a href="#contact">Contact</a>
+    </nav>
+    <a class="nav-cta" href="tel:+32000000000">Commander</a>
+  </header>
+
+  <main id="top">
+    <section class="hero panel" data-theme="red">
+      <div class="hero-bg"><img src="hero-main.jpg" alt="Pizza artisanale La Vaillance" /></div>
+      <div class="hero-orbit"><div class="coin pizza-coin">🍕</div><div class="coin">🍅</div><div class="coin">🌿</div><div class="coin">🧀</div></div>
+      <div class="hero-content reveal">
+        <p class="eyebrow">Pizzeria premium · Anderlecht</p>
+        <h1><span>Le vrai goût</span><span>de l’Italie</span></h1>
+        <p class="lead">Une adresse chaleureuse, des pizzas généreuses, une pâte croustillante, et une expérience visuelle digne d’une grande marque.</p>
+        <div class="hero-actions"><a class="btn primary" href="#menu">Voir le menu</a><a class="btn ghost" href="#gallery">Découvrir le lieu</a></div>
+        <div class="stats"><b>4.8/5</b><span>avis clients</span><b>30+</b><span>spécialités</span><b>2019</b><span>depuis</span></div>
+      </div>
+      <div class="scroll-cue">Scroll</div>
+    </section>
+
+    <section class="intro panel" id="experience">
+      <div class="section-head reveal"><p class="eyebrow">Cinematic polish</p><h2>Une expérience qui bouge, qui respire, qui donne faim.</h2></div>
+      <div class="feature-grid">
+        <article class="feature-card reveal"><span>01</span><h3>Smooth loaders</h3><p>Entrée premium, transition douce, micro-interactions et ambiance restaurant haut de gamme.</p></article>
+        <article class="feature-card reveal"><span>02</span><h3>3D product scroll</h3><p>Les pizzas et plats flottent comme des produits premium avec profondeur et parallaxe.</p></article>
+        <article class="feature-card reveal"><span>03</span><h3>Physics animations</h3><p>Ingrédients en mouvement, éléments aimantés, cartes qui réagissent au scroll et à la souris.</p></article>
+        <article class="feature-card reveal"><span>04</span><h3>Horizontal scroll</h3><p>Galerie immersive pensée comme une landing page de marque à 10.000€.</p></article>
+      </div>
+    </section>
+
+    <section class="showcase-3d panel">
+      <div class="sticky-product">
+        <div class="product-copy reveal"><p class="eyebrow">3D product scroll</p><h2>Chaque pizza devient une scène.</h2><p>Au scroll, le produit prend de la profondeur : lumière chaude, rotation subtile, ombres, glow et mise en scène premium.</p></div>
+        <div class="pizza-stage" id="pizzaStage"><img src="food-margherita-2.jpg" alt="Pizza Margherita" /><div class="steam"></div></div>
+      </div>
+    </section>
+
+    <section class="menu-section panel" id="menu">
+      <div class="section-head reveal"><p class="eyebrow">Menu complet</p><h2>Le guide du gourmand</h2><p>Menu retranscrit depuis vos photos, avec les photos originales conservées plus bas.</p></div>
+      <div class="menu-controls reveal"><button data-filter="all" class="active">Tout</button><button data-filter="pizzas">Pizzas</button><button data-filter="pates">Pâtes</button><button data-filter="boissons">Boissons</button><button data-filter="vins">Vins</button></div>
+      <div class="menu-grid" id="menuGrid"></div>
+    </section>
+
+    <section class="horizontal-section panel" id="gallery">
+      <div class="horizontal-track" id="horizontalTrack">
+        <article class="h-card title-card"><p class="eyebrow">Horizontal scroll</p><h2>La Vaillance en mouvement</h2><p>Photos, plats, terrasse et ambiance dans une galerie cinematic.</p></article>
+        <article class="h-card"><img src="facade.jpg" alt="Façade"><h3>Façade</h3></article>
+        <article class="h-card"><img src="terrasse-1.jpg" alt="Terrasse"><h3>Terrasse</h3></article>
+        <article class="h-card"><img src="interieur-1.jpg" alt="Intérieur"><h3>Intérieur</h3></article>
+        <article class="h-card"><img src="food-capricciosa.jpg" alt="Pizza"><h3>Capricciosa</h3></article>
+        <article class="h-card"><img src="food-vegetariana.jpg" alt="Pizza"><h3>Vegetariana</h3></article>
+      </div>
+    </section>
+
+    <section class="physics panel">
+      <div class="section-head reveal"><p class="eyebrow">Physics animations</p><h2>Des ingrédients vivants.</h2></div>
+      <div class="physics-box" id="physicsBox"><span>🍅</span><span>🫒</span><span>🧀</span><span>🌿</span><span>🍄</span><span>🍕</span><span>🔥</span><span>🍋</span></div>
+    </section>
+
+    <section class="menu-photos panel">
+      <div class="section-head reveal"><p class="eyebrow">Photos originales</p><h2>Le menu papier conservé</h2></div>
+      <div class="photo-grid">
+        <img src="menu-photos/6FA87229-8762-45A9-8793-3EC9E4477790.jpeg" alt="Menu cafés">
+        <img src="menu-photos/E0B7238B-D04C-4671-881F-1FFC43F5B451.jpeg" alt="Menu boissons">
+        <img src="menu-photos/315B8647-F230-43AF-9FA9-5FB6486632A2.jpeg" alt="Menu pâtes">
+        <img src="menu-photos/09F9E652-053B-4AD9-8160-EC199833A0BC.jpeg" alt="Menu guide">
+        <img src="menu-photos/3A4BE32B-202E-4D94-943F-1BAB60BC9F8B.jpeg" alt="Menu vins">
+        <img src="menu-photos/FC541FC9-B38C-4A06-ADE3-638DD0477BBB.jpeg" alt="Menu pizzas">
+      </div>
+    </section>
+
+    <section class="contact panel" id="contact">
+      <div class="contact-card reveal"><p class="eyebrow">Commander maintenant</p><h2>Pizzeria La Vaillance</h2><p>Site prêt pour remplacer le numéro, l’adresse, Google Maps, Instagram et liens de livraison.</p><div class="hero-actions"><a class="btn primary" href="tel:+32000000000">Appeler</a><a class="btn ghost" href="#menu">Retour menu</a></div></div>
+    </section>
+  </main>
+
+  <footer><span>© 2026 Pizzeria La Vaillance</span><strong>creation by astra agency</strong></footer>
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+
+  <url>
+    <loc>https://daoum101.github.io/pizzeria-vaillance/</loc>
+    <lastmod>2026-05-16</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+    <image:image>
+      <image:loc>https://daoum101.github.io/pizzeria-vaillance/food-margherita-2.jpg</image:loc>
+      <image:title>Pizza Margherita Pizzeria Vaillance Anderlecht</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://daoum101.github.io/pizzeria-vaillance/food-parma.jpg</image:loc>
+      <image:title>Pizza Parma roquette Pizzeria Vaillance</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://daoum101.github.io/pizzeria-vaillance/food-capricciosa.jpg</image:loc>
+      <image:title>Pizza Capricciosa Pizzeria Vaillance</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://daoum101.github.io/pizzeria-vaillance/food-vegetariana.jpg</image:loc>
+      <image:title>Pizza Végétarienne Pizzeria Vaillance</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://daoum101.github.io/pizzeria-vaillance/terrasse-1.jpg</image:loc>
+      <image:title>Terrasse Pizzeria Vaillance Anderlecht</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://daoum101.github.io/pizzeria-vaillance/interieur-1.jpg</image:loc>
+      <image:title>Intérieur Pizzeria Vaillance Anderlecht</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://daoum101.github.io/pizzeria-vaillance/facade.jpg</image:loc>
+      <image:title>Façade Pizzeria Vaillance Place de la Vaillance Anderlecht</image:title>
+    </image:image>
+  </url>
+
+</urlset>
